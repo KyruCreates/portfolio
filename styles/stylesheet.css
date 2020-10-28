@@ -1,0 +1,82 @@
+body {
+  background-color: #87CEEB; /* color == skyblue */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h1 {
+  text-align: center;
+}
+.menu ul {
+  list-style-type: none; /* removes bullet points */
+  margin: 0; /* removes browser defaults */
+  padding: 0; /* removes browser defaults */
+  overflow: hidden;
+  background-color: #4682B4; /* color == steelblue */
+}
+.menu li {
+  float: right; /* alignment of nav li */
+  border-left: 1px solid grey; /* line between nav li */
+}
+.menu li:last-child {
+  border-left: none; /* removes left border on last li */
+}
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.menu li a:hover { /* changes link color on hover */
+  background-color: purple;
+}
+.active {
+  background-color: #4169E1; /* active page == royalblue */
+}
+#project-list h3 {
+  padding: 5px;
+}
+#project-list section {
+  background-color: #008B8B; /* section bg color == darkcyan */
+  margin-bottom: 25px; /* spacing between sections */
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-bottom: 1px;
+}
+#project-list img {
+  border: 2px solid #191970; /* img border color == midnightblue */
+  border-radius: 5px; /* img rounded corners */
+}
+#project-list a:link {
+  color: #F5F5F5; /* color == whitesmoke */
+  text-decoration: none; /* no underline for links */
+}
+#project-list a:visited {
+  color: #00FF7F; /* color == springgreen */
+}
+#project-list a:hover {
+  text-decoration: underline; /* shows underline on hover */
+}
+#about-me p {
+  word-wrap: normal; /* wraps text without breaking words */
+  width: 99%;
+}
+#home-footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid grey;
+}
+#about-footer {
+  position: absolute;
+  bottom: 0;
+  width: 98.5%;
+  height: auto;
+  border-top: 1px solid grey;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 10px;
+}

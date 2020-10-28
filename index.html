@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML110 Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./styles/stylesheet.css">
   </head>
+
   <body>
     <header>
       <h1>HTML110 Portfolio</h1>
       <nav class="menu">
-        <strong>Site Navigation</strong>
+        <!-- <strong>Site Navigation</strong> -->
         <ul>
-          <!-- home page = landing page that includes list of projects + images -->
-          <li><a href="./index.html">Home</a></li>
           <!-- about page = about.html document -->
           <li><a href="./about.html">About</a></li>
+          <!-- home page = landing page that includes list of projects + images -->
+          <li><a class="active" href="./index.html">Home</a></li>
         </ul>
       </nav>
     </header>
@@ -24,6 +26,7 @@
         <h3><a href="https://github.com/KyruCreates/semantic-elements" target="_blank">Semantic Elements</a></h3>
         <figure>
           <img src="./images/semantic-elements-preview.jpg" alt="Semantic Elements preview" width=250 height=300>
+          <figcaption>Screenshot from Semantic Elements</figcaption>
         </figure>
       </section>
 
@@ -43,13 +46,13 @@
         </figure>
       </section>
     </article>
-    <hr>
-    <footer>
-      <p>
-        Created by: Kendall Eng<br>
-        For: HTML110<br>
-        Contact: <a href="mailto:keng2@uw.edu">keng2@uw.edu</a>
-      </p>
+
+    <footer id="home-footer">
+      <ul>
+        <li>Created by: Kendall Eng</li>
+        <li>For: HTML110</li>
+        <li>Contact: <a href="mailto:keng2@uw.edu">keng2@uw.edu</a></li>
+      </ul>
     </footer>
   </body>
 </html>
