@@ -1,7 +1,11 @@
+header, h1, h2, h3 {
+  font-family: 'Merienda', cursive;
+}
 body {
   background-color: #87CEEB; /* color == skyblue */
   margin-left: 10px;
   margin-right: 10px;
+  font-family: 'Marmelad', sans-serif;
 }
 h1 {
   text-align: center;
