@@ -1,11 +1,11 @@
+body {
+  font-family: 'Marmelad', sans-serif;
+  background-color: #87CEEB; /* color == skyblue */
+  margin: 0;
+  padding: 0;
+}
 header, h1, h2, h3 {
   font-family: 'Merienda', cursive;
-}
-body {
-  background-color: #87CEEB; /* color == skyblue */
-  margin-left: 10px;
-  margin-right: 10px;
-  font-family: 'Marmelad', sans-serif;
 }
 h1 {
   text-align: center;
@@ -31,13 +31,13 @@ h1 {
   padding: 14px 16px;
   text-decoration: none;
 }
-.menu li a:hover { /* changes link color on hover */
+.menu li a:hover:not(.active) { /* changes link color on hover only for non-active li */
   background-color: purple;
 }
 .active {
   background-color: #4169E1; /* active page == royalblue */
 }
-#project-list h3 {
+h2, h3 {
   padding: 5px;
 }
 #project-list section {
@@ -63,24 +63,42 @@ h1 {
 }
 #about-me p {
   word-wrap: normal; /* wraps text without breaking words */
-  width: 99%;
+  width: 98%;
+  margin-left: 1em;
 }
 #home-footer {
   position: relative;
+  padding: 0;
+  margin: 0;
   bottom: 0;
   width: 100%;
   height: auto;
-  border-top: 1px solid grey;
 }
 #about-footer {
   position: absolute;
+  padding: 0;
+  margin: 0;
   bottom: 0;
-  width: 98.5%;
+  width: 100%;
   height: auto;
-  border-top: 1px solid grey;
+}
+footer {
+  background-color: #4682B4; /* color == steelblue */
+  color: white;
 }
 footer ul {
   list-style-type: none;
-  padding: 0;
-  margin-left: 10px;
+  padding: 0.5em;
+  margin: 0;
+}
+#contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
