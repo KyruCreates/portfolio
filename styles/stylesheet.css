@@ -20,6 +20,12 @@ header, h1, h2, h3 {
 h1 {
   text-align: center;
 }
+/* .animate__animated.animate__bounceIn {
+  --animate.duration: 200ms;
+}
+.animate__animated.animate__fadeInDown {
+  --animate.duration: 150ms;
+} */
 h2 {
   padding-left: 1rem;
 }
@@ -65,13 +71,13 @@ h2 {
   color: black;
   text-align: center;
   font-size: 16px;
+  font-weight: normal;
   padding: 16px;
   width: 10rem;
   transition: all 0.5s;
   cursor: pointer; /* change the cursor */
   margin: 0.5rem;
   box-shadow: 0 9px #4169e1;
-  -webkit-text-stroke: 1px black;
 }
 .buttons span {
   cursor: pointer;
@@ -89,6 +95,7 @@ h2 {
 }
 .buttons:hover span {
   padding-right: 25px;
+  font-weight: bold;
 }
 .buttons:hover span:after {
   opacity: 1;
@@ -99,7 +106,7 @@ button:active {
   box-shadow: 0 5px blue;
   transform: translateY(4px);
   color: whitesmoke;
-  -webkit-text-stroke: 1px whitesmoke;
+  font-weight: bold;
   transition-duration: 200ms;
 }
 #project-list {
