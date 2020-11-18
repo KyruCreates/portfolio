@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML110 Portfolio</title>
-    <!-- linking stylesheet.css file -->
-    <link rel="stylesheet" type="text/css" href="./styles/stylesheet.css">
     <!-- FontAwesome kit link -->
     <script src="https://kit.fontawesome.com/ec793d32a5.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
@@ -14,6 +12,8 @@
     <!-- Marmelad font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+    <!-- linking stylesheet.css file -->
+    <link rel="stylesheet" type="text/css" href="./styles/stylesheet.css">
   </head>
 
   <body>
@@ -33,35 +33,50 @@
     <article class="clearfix" id="project-list">
       <h2>Projects Showcase</h2>
       <section>
-        <h3><a href="https://github.com/KyruCreates/semantic-elements" target="_blank">Semantic Elements</a></h3>
-        <figure>
-          <img src="./images/semantic-elements-preview.jpg" alt="Semantic Elements preview" width=250 height=300>
-          <figcaption>Screenshot from Semantic Elements</figcaption>
-        </figure>
-      </section>
-
-      <section>
-        <h3><a href="https://kyrucreates.github.io/kitties-to-go/" target="_blank">Kitties To Go!</a></h3>
+        <h3>Kitties To Go!</h3>
         <figure>
           <img src="./images/erik-jan-leusink-unsplash.jpg" alt="Sleeping Kitten" width=250 height=300>
           <figcaption>Photo Credit: Erin-Jan Leusink | Unsplash</figcaption>
         </figure>
+        <button class="buttons" style="vertical-align:middle" onclick="openPrj1()"><span>Check it out!</span></button>
       </section>
 
       <section>
-        <h3><a href="#">Project 3</a></h3>
+        <h3>Semantic Elements</h3>
+        <figure>
+          <img src="./images/semantic-elements-preview.jpg" alt="Semantic Elements project preview" width=250 height=300>
+          <figcaption>Semantic Elements project screenshot</figcaption>
+        </figure>
+        <button class="buttons" style="vertical-align:middle" onclick="openPrj2()"><span>Check it out!</span></button>
+      </section>
+
+      <section>
+        <h3>Project 3</h3>
         <figure>
           <img src="./images/tim-hufner-unsplash.jpg" alt="Project 3 preview" width=250 height=300>
           <figcaption>Photo Credit: Tim Hufner | Unsplash</figcaption>
         </figure>
+        <button class="buttons" style="vertical-align:middle" onclick="#"><span>Check it out!</span></button>
       </section>
     </article>
 
+    <script>
+      function openPrj1() {
+        window.open("https://kyrucreates.github.io/kitties-to-go/");
+      }
+      function openPrj2() {
+        window.open("https://github.com/KyruCreates/semantic-elements");
+      }
+      // function openPrj3() {
+      //
+      // }
+    </script>
+
     <footer id="home-footer">
       <ul id="contacts">
-        <li>Created by: Kendall Eng</li>
+        <li>Created by: <a href="./about.html">Kendall Eng</a></li>
         <li>|</li>
-        <li>For: HTML110</li>
+        <li>For: <a href="https://www.pce.uw.edu/certificates/front-end-development-with-html-css-and-javascript" target="_blank">HTML110</a></li>
         <li>|</li>
         <!-- email -->
         <li><a href="mailto:keng2@uw.edu"><i class="fas fa-envelope"></i></a></li>
