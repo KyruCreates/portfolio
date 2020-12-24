@@ -20,22 +20,23 @@
 
   <body>
     <header>
+      <a href="#main-content" class="hidden">Skip to main content</a>
       <h1 class="animate__animated animate__bounceIn">Contact</h1>
       <nav class="menu">
         <!-- <strong>Page Navigation</strong> -->
         <ul>
-          <!-- contact me page -->
-          <li><a class="active" href="./contact.html">Contact</a></li>
-          <!-- about page = about.html document -->
-          <li><a href="./about.html">About</a></li>
           <!-- home page = landing page that includes list of projects -->
           <li><a href="./index.html">Home</a></li>
+          <!-- about page = about.html document -->
+          <li><a href="./about.html">About</a></li>
+          <!-- contact me page -->
+          <li><a class="active" href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <article class="clearfix" id="contact">
-      <h2 class="animate__animated animate__fadeInDown animate__delay-1s">Contact Me!</h2>
+      <h2 class="animate__animated animate__fadeInDown animate__delay-1s" id="main-content">Contact Me!</h2>
       <form method="post" name="contact-form">
         <fieldset>
           <legend>Your Name:</legend>
@@ -73,13 +74,13 @@
         <br>
         <fieldset>
           <legend>Best way to contact?</legend>
-          <input type="checkbox" name="email" id="email" value="email">
+          <input type="checkbox" name="best-contact-method" id="email" value="email">
           <label for="email">Email</label>
           <br>
-          <input type="checkbox" name="text" id="text" value="text">
+          <input type="checkbox" name="best-contact-method" id="text" value="text">
           <label for="text">Text</label>
           <br>
-          <input type="checkbox" name="call" id="call" value="call">
+          <input type="checkbox" name="best-contact-method" id="call" value="call">
           <label for="call">Call</label>
         </fieldset>
         <br>

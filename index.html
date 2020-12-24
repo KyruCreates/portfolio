@@ -20,47 +20,48 @@
 
   <body>
     <header>
+      <a href="#main-content" class="hidden">Skip to main content</a>
       <h1 class="animate__animated animate__bounceIn">HTML110 Portfolio</h1>
       <nav class="menu">
-        <!-- <strong>Site Navigation</strong> -->
-        <ul>
-          <!-- contact me page -->
-          <li><a href="./contact.html">Contact</a></li>
-          <!-- about page = about.html document -->
-          <li><a href="./about.html">About</a></li>
+        <ul id="page-navigation">
           <!-- home page = landing page that includes list of projects + images -->
           <li><a class="active" href="./index.html">Home</a></li>
+          <!-- about page = about.html document -->
+          <li><a href="./about.html">About</a></li>
+          <!-- contact me page -->
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <article class="clearfix" id="project-list">
-      <h2 class="animate__animated animate__fadeInDown animate__delay-1s">Projects Showcase</h2>
-      <section>
+      <h2 class="animate__animated animate__fadeInDown animate__delay-1s" id="main-content">Projects Showcase</h2>
+
+      <section id="academy-archery-project">
+        <h3>Academy Archery</h3>
+        <figure>
+          <img src="./images/neonbrand-unsplash.jpg" alt="Archery Target with Four Arrows in Bullseye Rings" width=300 height=300>
+          <figcaption>Photo Credit: NeONBRAND, Unsplash</figcaption>
+        </figure>
+        <button class="buttons" style="vertical-align:middle" onclick="#"><span>Check out Academy Archery!</span></button>
+      </section>
+
+      <section id="kitties-to-go-project">
         <h3>Kitties To Go!</h3>
         <figure>
-          <img src="./images/erik-jan-leusink-unsplash.jpg" alt="Sleeping Kitten" width=250 height=300>
-          <figcaption>Photo Credit: Erin-Jan Leusink | Unsplash</figcaption>
+          <img src="./images/erik-jan-leusink-unsplash.jpg" alt="A Sleeping Kitten on a White Blanket" width=300 height=300>
+          <figcaption>Photo Credit: Erin-Jan Leusink, Unsplash</figcaption>
         </figure>
-        <button class="buttons" style="vertical-align:middle" onclick="openPrj1()"><span>Check it out!</span></button>
+        <button class="buttons" style="vertical-align:middle" onclick="openPrj1()"><span>Check out Kitties to Go!</span></button>
       </section>
 
-      <section>
+      <section id="semantic-elements-project">
         <h3>Semantic Elements</h3>
         <figure>
-          <img src="./images/semantic-elements-preview.jpg" alt="Semantic Elements project preview" width=250 height=300>
-          <figcaption>Semantic Elements project screenshot</figcaption>
+          <img src="./images/semantic-elements-preview.jpg" alt="Semantic Elements project preview with written assignment specifications" width=300 height=300>
+          <figcaption>Photo Credit: Kendall Eng</figcaption>
         </figure>
-        <button class="buttons" style="vertical-align:middle" onclick="openPrj2()"><span>Check it out!</span></button>
-      </section>
-
-      <section>
-        <h3>Project 3</h3>
-        <figure>
-          <img src="./images/tim-hufner-unsplash.jpg" alt="Project 3 preview" width=250 height=300>
-          <figcaption>Photo Credit: Tim Hufner | Unsplash</figcaption>
-        </figure>
-        <button class="buttons" style="vertical-align:middle" onclick="#"><span>Check it out!</span></button>
+        <button class="buttons" style="vertical-align:middle" onclick="openPrj2()"><span>Check out Semantic Elements!</span></button>
       </section>
     </article>
 
