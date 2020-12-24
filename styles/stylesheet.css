@@ -25,9 +25,9 @@ header, h1, h2, h3 {
   height: 1px; width: 1px;
   margin: -1px; padding: 0; border: 0;
 }
-.hidden:focus {
+/* .hidden:focus {
   left: 0;
-}
+} */
 h1 {
   text-align: center;
 }
