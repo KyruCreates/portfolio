@@ -14,28 +14,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
     <!-- animate.style custom options -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- normalize -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
     <!-- linking stylesheet.css file -->
     <link rel="stylesheet" type="text/css" href="./styles/stylesheet.css">
   </head>
 
   <body>
     <header>
+      <a href="#main-content" class="hidden">Skip to main content</a>
       <h1 class="animate__animated animate__bounceIn">About</h1>
       <nav class="menu">
         <!-- <strong>Page Navigation</strong> -->
         <ul>
-          <!-- contact me page -->
-          <li><a href="./contact.html">Contact</a></li>
-          <!-- about page = about.html document -->
-          <li><a class="active" href="./about.html">About</a></li>
           <!-- home page = landing page that includes list of projects -->
           <li><a href="./index.html">Home</a></li>
+          <!-- about page = about.html document -->
+          <li><a class="active" href="./about.html">About</a></li>
+          <!-- contact me page -->
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <article class="clearfix" id="about-me">
-      <h2 class="animate__animated animate__fadeInDown animate__delay-1s">Hi!</h2>
+      <h2 class="animate__animated animate__fadeInDown animate__delay-1s" id="main-content">Hi!</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare tempus justo, eu volutpat nulla
         maximus nec. Morbi tempus, magna in mattis elementum, ligula tellus egestas sem, in semper ex lorem

@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  width: 100%;
   box-sizing: border-box;
 }
 *, *::before, *::after {
@@ -17,11 +18,21 @@ body {
 header, h1, h2, h3 {
   font-family: 'Merienda', cursive;
 }
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+/* .hidden:focus {
+  left: 0;
+} */
 h1 {
   text-align: center;
 }
 h2 {
-  padding-left: 1rem;
+  padding-left: 4rem;
 }
 .menu ul {
   list-style-type: none; /* removes bullet points */
@@ -29,14 +40,14 @@ h2 {
   background-color: #4682B4; /* color == steelblue */
 }
 .menu li {
-  float: right; /* alignment of nav li */
-  border-left: 1px solid grey; /* line between nav li */
+  float: left; /* alignment of nav li */
+  border-right: 1px solid grey; /* line between nav li */
 }
 .menu li:last-child {
-  border-left: none; /* removes left border on last li */
+  border-right: none; /* removes left border on last li */
 }
 .menu li:first-child {
-  margin-right: 1rem; /* adding some spacing */
+  margin-left: 1rem; /* adding some spacing */
 }
 .menu li a {
   display: block;
@@ -53,7 +64,7 @@ h2 {
 }
 #project-list section {
   max-width: 25rem;
-  height: 30rem;
+  height: 32rem;
   background-color: #008B8B; /* section bg color == darkcyan */
   margin: 0 1rem 2rem 1rem; /* spacing between sections */
   border-radius: 5px;
@@ -70,7 +81,7 @@ h2 {
   font-size: 16px;
   font-weight: normal;
   padding: 16px;
-  width: 10rem;
+  width: 19rem;
   transition: all 0.5s;
   cursor: pointer; /* change the cursor */
   margin: 0.5rem;
@@ -152,12 +163,11 @@ footer {
 }
 #about-me p {
   word-wrap: normal; /* wraps text without breaking words */
-  width: 98%;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  width: 90%;
+  padding-left: 5rem;
 }
 #contact fieldset {
-  margin: 5px 1rem;
+  margin: 5px 4rem;
   width: 50rem;
   background-color: #008B8B;
   border: 2px solid #191970;
@@ -167,8 +177,8 @@ footer {
   margin: 5px 0;
 }
 #contact input[type=submit], #contact input[type=reset] {
-  margin-left: 1rem;
-  margin-bottom: 1rem;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
 }
 #contact legend {
   background-color: #4682B4;
